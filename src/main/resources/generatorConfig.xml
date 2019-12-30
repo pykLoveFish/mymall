@@ -40,10 +40,10 @@
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.pyk.mymall.mbg.mapper"
                              targetProject="E:\code\mymall\src\main\java"/>
         <!--生成全部表tableName设为%-->
-        <!--品牌表-->
-        <table tableName="pms_brand">
-            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
-        </table>
+        <!--&lt;!&ndash;品牌表&ndash;&gt;-->
+        <!--<table tableName="pms_brand">-->
+            <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
 
         <!--&lt;!&ndash;后台用户表&ndash;&gt;-->
         <!--<table tableName="ums_admin">-->
@@ -66,6 +66,19 @@
         <!--<table tableName="ums_admin_permission_relation">-->
             <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
         <!--</table>-->
+
+        <!--商品信息表-->
+        <table tableName="pms_product">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <!--商品属性参数表-->
+        <table tableName="pms_product_attribute">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <!--存储产品参数值的表-->
+        <table tableName="pms_product_attribute_value">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
 
 
     </context>

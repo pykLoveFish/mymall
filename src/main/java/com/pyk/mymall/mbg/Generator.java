@@ -12,7 +12,7 @@ import java.util.List;
 public class Generator {
     public static void main(String[] args) throws Exception {
         List<String> warnings = new ArrayList<>();//MBG 执行过程中的警告信息
-        boolean overwrite = true; //当生成的代码重复时，覆盖原代码
+        boolean overwrite = false; //当生成的代码重复时，是否覆盖原代码
 
         InputStream is = Generator.class.getResourceAsStream("/generatorConfig.xml");//读取我们的 MBG 配置文件
         ConfigurationParser cp = new ConfigurationParser(warnings);
